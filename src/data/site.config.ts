@@ -12,7 +12,7 @@ interface SiteConfig {
 export const siteConfig: SiteConfig = {
 	site: 'https://www.developedbykenny.com', // Write here your website url
 	author: 'Kenny Nguyen', // Site author
-	title: 'DevelopedByKenny', // Site title.
+	title: 'Kenny Nguyen', // Site title.
 	description: 'Writing about stuff in my little corner of the web.', // Description to display in the meta tags
 	lang: 'en-GB',
 	ogLocale: 'en_GB',
