@@ -7,10 +7,12 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				white: '#f8f9fa'
+				white: '#f8f9fa',
+				yellow: '#FFCD39'
 			},
 			fontFamily: {
-				body: ['Manrope', ...defaultTheme.fontFamily.sans]
+				body: ['Manrope', ...defaultTheme.fontFamily.sans],
+				rem: ['REM', 'sans-serif'] // Custom font
 			},
 			gridTemplateColumns: {
 				list: 'repeat(auto-fill, minmax(400px, max-content))'

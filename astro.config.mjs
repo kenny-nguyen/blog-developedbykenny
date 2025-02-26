@@ -4,6 +4,8 @@ import sitemap from '@astrojs/sitemap'
 import tailwind from '@astrojs/tailwind'
 import { remarkReadingTime } from './src/utils/readTime.ts'
 import { siteConfig } from './src/data/site.config'
+import react from '@astrojs/react'
+import tinaDirective from './astro-tina-directive/register'
 
 // https://astro.build/config
 export default defineConfig({
@@ -22,13 +24,18 @@ export default defineConfig({
 			shikiConfig: {
 				experimentalThemes: {
 					light: 'vitesse-light',
-					dark: 'material-theme-palenight',
-				  },
+					dark: 'material-theme-palenight'
+				},
 				wrap: true
 			},
 			drafts: true
 		}),
 		sitemap(),
-		tailwind()
-	]
+		tailwind(),
+		react(),
+		tinaDirective()
+	],
+	redirects: {
+		'/admin': '/admin/index.html'
+	}
 })
